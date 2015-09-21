@@ -1,6 +1,6 @@
 # CustomBadge
 
-CustomBadge is a custom badge view implementation for UITabBar in iOS. It is a tiny library, simple and easy to use. It's an class extension of UITabBar and there are only 3 functions in the api.
+CustomBadge is a custom badge view implementation for UITabBar in iOS. It is a tiny library, simple and easy to use. It is an class extension of UITabBar and few apis are provided.
 
 # usage 
 
