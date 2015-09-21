@@ -20,4 +20,4 @@ CustomBadge is a custom badge view implementation for UITabBar in iOS. It is a t
 ```
 
 that's very easy to use , and here is the effects:
-![demo](https://github.com/MRsummer/CustomBadge/edit/master/demo.gif)
+![demo](https://github.com/MRsummer/CustomBadge/blob/master/demo.gif)
