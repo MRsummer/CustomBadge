@@ -2,15 +2,15 @@
 
 CustomBadge is a custom badge view implementation for UITabBar in iOS. It is a tiny library, simple and easy to use. It is an class extension of UITabBar and few apis are provided.
 
-# usage 
+# Usage 
 
-1. set the width of tab bar icon and the top of badge view, so it can calculate and position the badge properly
+1. Set the width of tab bar icon and the top of badge view, so it can calculate and position the badge properly
 ```Objective-c
 [tabBar setTabIconWidth:29];
 [tabBar setBadgeTop:9];
 ```
 
-2. set badge type and number 
+2. Set badge type and number 
 ```Objective-c
 // type is an CustomBadgeType enum type, it has 3 values
 // kCustomBadgeStyleRedDot  represents a slightly notify without number for user
@@ -19,5 +19,5 @@ CustomBadge is a custom badge view implementation for UITabBar in iOS. It is a t
 [selftabBar setBadgeStyle:type value:number atIndex:index];
 ```
 
-that's very easy to use , and here is the effects:
+That's very easy to use , and here is the effects:
 ![demo](https://github.com/MRsummer/CustomBadge/blob/master/demo.gif)
