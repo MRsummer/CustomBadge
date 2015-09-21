@@ -15,6 +15,7 @@
 		3ACB68A51BB01F08005025CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACB68A31BB01F08005025CC /* LaunchScreen.storyboard */; };
 		3ACB68B01BB01F08005025CC /* CustomBadgeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACB68AF1BB01F08005025CC /* CustomBadgeTests.m */; };
 		3ACB68BB1BB01F08005025CC /* CustomBadgeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACB68BA1BB01F08005025CC /* CustomBadgeUITests.m */; };
+		3ACB68CC1BB01F55005025CC /* UITabBar+CustomBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACB68CB1BB01F55005025CC /* UITabBar+CustomBadge.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		3ACB68B61BB01F08005025CC /* CustomBadgeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomBadgeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ACB68BA1BB01F08005025CC /* CustomBadgeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomBadgeUITests.m; sourceTree = "<group>"; };
 		3ACB68BC1BB01F08005025CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3ACB68CA1BB01F55005025CC /* UITabBar+CustomBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+CustomBadge.h"; sourceTree = "<group>"; };
+		3ACB68CB1BB01F55005025CC /* UITabBar+CustomBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+CustomBadge.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,15 +104,8 @@
 		3ACB68941BB01F08005025CC /* CustomBadge */ = {
 			isa = PBXGroup;
 			children = (
-				3ACB68981BB01F08005025CC /* AppDelegate.h */,
-				3ACB68991BB01F08005025CC /* AppDelegate.m */,
-				3ACB689B1BB01F08005025CC /* ViewController.h */,
-				3ACB689C1BB01F08005025CC /* ViewController.m */,
-				3ACB689E1BB01F08005025CC /* Main.storyboard */,
-				3ACB68A11BB01F08005025CC /* Assets.xcassets */,
-				3ACB68A31BB01F08005025CC /* LaunchScreen.storyboard */,
-				3ACB68A61BB01F08005025CC /* Info.plist */,
-				3ACB68951BB01F08005025CC /* Supporting Files */,
+				3ACB68C91BB01F27005025CC /* sample */,
+				3ACB68C81BB01F18005025CC /* vendor */,
 			);
 			path = CustomBadge;
 			sourceTree = "<group>";
@@ -117,6 +113,10 @@
 		3ACB68951BB01F08005025CC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3ACB689E1BB01F08005025CC /* Main.storyboard */,
+				3ACB68A11BB01F08005025CC /* Assets.xcassets */,
+				3ACB68A31BB01F08005025CC /* LaunchScreen.storyboard */,
+				3ACB68A61BB01F08005025CC /* Info.plist */,
 				3ACB68961BB01F08005025CC /* main.m */,
 			);
 			name = "Supporting Files";
@@ -138,6 +138,27 @@
 				3ACB68BC1BB01F08005025CC /* Info.plist */,
 			);
 			path = CustomBadgeUITests;
+			sourceTree = "<group>";
+		};
+		3ACB68C81BB01F18005025CC /* vendor */ = {
+			isa = PBXGroup;
+			children = (
+				3ACB68CA1BB01F55005025CC /* UITabBar+CustomBadge.h */,
+				3ACB68CB1BB01F55005025CC /* UITabBar+CustomBadge.m */,
+			);
+			name = vendor;
+			sourceTree = "<group>";
+		};
+		3ACB68C91BB01F27005025CC /* sample */ = {
+			isa = PBXGroup;
+			children = (
+				3ACB68981BB01F08005025CC /* AppDelegate.h */,
+				3ACB68991BB01F08005025CC /* AppDelegate.m */,
+				3ACB689B1BB01F08005025CC /* ViewController.h */,
+				3ACB689C1BB01F08005025CC /* ViewController.m */,
+				3ACB68951BB01F08005025CC /* Supporting Files */,
+			);
+			name = sample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3ACB68CC1BB01F55005025CC /* UITabBar+CustomBadge.m in Sources */,
 				3ACB689D1BB01F08005025CC /* ViewController.m in Sources */,
 				3ACB689A1BB01F08005025CC /* AppDelegate.m in Sources */,
 				3ACB68971BB01F08005025CC /* main.m in Sources */,

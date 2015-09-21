@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+#import "UITabBar+CustomBadge.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,30 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    UITabBarController *tabController = [UITabBarController new];
+    ViewController *controller1 = [[ViewController alloc] initWithText:@"haha"];
+    ViewController *controller2 = [[ViewController alloc] initWithText:@"hehe"];
+    tabController.viewControllers = @[ controller1, controller2 ];
+    
+    UITabBarItem *item0 = tabController.tabBar.items[0];
+    item0.title = @"haha";
+    item0.image = [UIImage imageNamed:@"icon_info"];
+    
+    UITabBarItem *item1 = tabController.tabBar.items[1];
+    item1.title = @"hehe";
+    item1.image = [UIImage imageNamed:@"icon_news"];
+    
+    //通过这两个参数来调整badge位置
+    [tabController.tabBar setTabIconWidth:29];
+    [tabController.tabBar setBadgeTop:9];
+    
+    self.window.rootViewController = tabController;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
